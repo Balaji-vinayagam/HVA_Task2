@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body{
+          background-color: #00ffff;
+          margin: 200px;
+        }    
+        div{
+           justify-content: center;
+           display: flex;
+        }
+        .submit{
+          margin-left: 130px;    
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <form action="/registration.html" target="_blank">
+        <fieldset>
+            <legend>Registration Form</legend>
+            <label for="uname">Enter name</label><br>
+            <input type="text" id="uname" name="uname" placeholder="Name" required><br><br>
+            <label for="email">Enter Mail ID</label><br>
+            <input type="email" id="email" name="email" placeholder="Mail ID" required><br><br>
+            <label for="phone">Enter Mobile Number</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="Mobile Number" required><br><br>
+            <label for="dob">Enter Date Of Birth</label><br>
+            <input type="date" id="dob" name="dob" placeholder="Date Of Birth" required><br><br>
+            <label>Select User Type</label>
+            <input type="radio" id="student" name="usertype" value="student" required>
+            <label for="student">Student</label>
+            <input type="radio" id="staff" name="usertype" value="staff" required>
+            <label for="staff">Staff</label>
+            <input type="radio" id="admin" name="usertype" value="admin" required>
+            <label for="admin">Admin</label><br><br>
+            <input class="submit" type="submit" value="Submit">
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>
